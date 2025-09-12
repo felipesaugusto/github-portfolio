@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Portfólio — Modelo Minimalista</title>
+  <link rel="stylesheet" href="index.css">
+</head>
+<body>
+  <div class="bg-geo" aria-hidden="true"></div>
+
+  <main class="container">
+    <header class="topbar">
+      <div class="name-badge">
+        <span>Felipe Augusto</span>
+      </div>
+      <p class="headline">
+        Full-stack developer em constante aprendizado, com interesse em IA, bancos de dados e experiências digitais limpas e eficientes.
+      </p>
+    </header>
+
+    <section class="grid" id="projects">
+      <article class="card"
+        data-title="Sistema Web para Loja Virtual"
+        data-desc="Loja virtual com cadastro de produtos e usuários, carrinho de compras e edição de perfil."
+        data-deploy="https://seu-deploy-loja.com">
+        <div class="ribbons">
+          <a class="ribbon ribbon--code" href="https://github.com/voce/loja-virtual" target="_blank" rel="noopener noreferrer">⌘ CODE</a>
+        </div>
+        <h3 class="card__title">Sistema Web para Loja Virtual</h3>
+        <div class="stacks">
+          <span class="badge react">React.js</span>
+          <span class="badge js">JavaScript</span>
+          <span class="badge html">HTML</span>
+          <span class="badge css">CSS</span>
+        </div>
+      </article>
+
+      <article class="card"
+        data-title="App de Criação de Memes (Mobile)"
+        data-desc="Aplicativo para criar memes personalizados, com login via Firebase."
+        data-deploy="https://seu-deploy-memes.com">
+        <div class="ribbons">
+          <a class="ribbon ribbon--code" href="https://github.com/voce/memes-app" target="_blank" rel="noopener noreferrer">⌘ CODE</a>
+        </div>
+        <h3 class="card__title">App de Criação de Memes</h3>
+        <div class="stacks">
+          <span class="badge react-native">React Native</span>
+          <span class="badge firebase">Firebase</span>
+          <span class="badge js">JavaScript</span>
+        </div>
+      </article>
+
+      <article class="card"
+        data-title="Chatbot TRBM"
+        data-desc="Chatbot interativo sobre Microsoft Excel com respostas automáticas e técnicas de IA."
+        data-deploy="https://github.com/felipesaugusto/chatbot">
+        <div class="ribbons">
+          <a class="ribbon ribbon--code" href="https://github.com/felipesaugusto/chatbot" target="_blank" rel="noopener noreferrer">⌘ CODE</a>
+        </div>
+        <h3 class="card__title">Chatbot TRBM</h3>
+        <div class="stacks">
+          <span class="badge python">Python</span>
+          <span class="badge flask">Flask</span>
+          <span class="badge ai">IA/ML</span>
+        </div>
+      </article>
+    </section>
+
+    <section class="counter" aria-live="polite">
+      <div><span class="counter__value" id="viewed">0</span>/<span>3</span> PROJETOS VISTOS</div>
+      <div class="counter__bar"><span></span></div>
+    </section>
+  </main>
+
+  <nav class="fab-left">
+    <button class="fab__btn" id="themeToggle" title="Alternar tema"></button>
+  </nav>
+
+  <nav class="fab">
+    <a class="fab__btn"
+   href="https://mail.google.com/mail/?view=cm&fs=1&to=felipe@email.com&su=Contato&body=Olá%20Felipe..."
+   target="_blank" rel="noopener noreferrer" title="Enviar via Gmail">
+  <img src="images/email1.png" alt="E-mail">
+</a>
+
+    <a class="fab__btn" href="https://www.linkedin.com/in/felipe-augusto-164002175" target="_blank" rel="noopener noreferrer" title="LinkedIn">
+      <img src="images/linkedin.png" alt="LinkedIn">
+    </a>
+    <a class="fab__btn" href="https://github.com/felipesaugusto" target="_blank" rel="noopener noreferrer" title="GitHub">
+      <img src="images/git.png" alt="GitHub">
+    </a>
+  </nav>
+
+  <dialog id="projectModal" class="modal">
+    <div class="modal__card">
+      <button class="modal__close" aria-label="Fechar">✕</button>
+      <h3 class="modal__title"></h3>
+      <p class="modal__desc"></p>
+      <div class="modal__actions">
+        <a class="btn btn--deploy" target="_blank" rel="noopener noreferrer">↗ Abrir projeto</a>
+      </div>
+    </div>
+  </dialog>
+
+  <script src="index.js"></script>
+</body>
+</html>
